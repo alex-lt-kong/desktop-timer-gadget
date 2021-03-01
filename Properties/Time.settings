@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MamsdsTimer.Properties" GeneratedClassName="Time">
+  <Profiles />
+  <Settings>
+    <Setting Name="FontSize" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="FontName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Microsoft Yahei</Value>
+    </Setting>
+    <Setting Name="Deadline" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2112-09-03</Value>
+    </Setting>
+    <Setting Name="FontColor" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#FF000000</Value>
+    </Setting>
+    <Setting Name="Margin" Type="System.Windows.Thickness" Scope="User">
+      <Value Profile="(Default)">50,110,50,5</Value>
+    </Setting>
+    <Setting Name="HorizontalAlignment" Type="System.Windows.HorizontalAlignment" Scope="User">
+      <Value Profile="(Default)">Center</Value>
+    </Setting>
+    <Setting Name="dtFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d'天'hh'小时'mm'分'ss'秒'</Value>
+    </Setting>
+    <Setting Name="IsDropShadowEffectEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MamsdsTimer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WindowHeight" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+    <Setting Name="WindowWidth" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">800</Value>
+    </Setting>
+    <Setting Name="BGPPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WindowLeft" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="WindowTop" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="IsAutoStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsTopMost" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MainTitleContent" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;FlowDocument PagePadding="5,0,5,0" AllowDrop="True" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph Margin="0,0,0,0" TextAlignment="Center" FontFamily="Times New Roman" FontSize="12"&gt;&lt;Span FontFamily="微软雅黑" FontWeight="Bold" FontSize="26.6666666666667" Foreground="#FF000000" xml:lang="zh-cn"&gt;现在距离&lt;/Span&gt;&lt;Run FontFamily="楷体" FontWeight="Bold" FontSize="64" Foreground="#FF0DA1DF" xml:lang="zh-cn"&gt;哆啦A梦&lt;/Run&gt;&lt;Span FontFamily="微软雅黑" FontWeight="Bold" FontSize="26.6666666666667" Foreground="#FF000000" xml:lang="zh-cn"&gt;出生还有：&lt;/Span&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="0,0,0,0" TextAlignment="Center" FontFamily="Times New Roman" FontSize="12"&gt;&lt;Run FontFamily="微软雅黑" xml:lang="zh-cn"&gt;（哆啦&lt;/Run&gt;&lt;Span FontFamily="微软雅黑" Foreground="#FF000000" xml:lang="zh-cn"&gt;A&lt;/Span&gt;&lt;Span FontFamily="微软雅黑" Foreground="#FF000000" xml:lang="zh-cn"&gt;梦是&lt;/Span&gt;&lt;Span FontFamily="微软雅黑" Foreground="#FF000000" xml:lang="zh-cn"&gt;2112&lt;/Span&gt;&lt;Span FontFamily="微软雅黑" Foreground="#FF000000" xml:lang="zh-cn"&gt;年&lt;/Span&gt;&lt;Span FontFamily="微软雅黑" Foreground="#FF000000" xml:lang="zh-cn"&gt;9&lt;/Span&gt;&lt;Span FontFamily="微软雅黑" Foreground="#FF000000" xml:lang="zh-cn"&gt;月&lt;/Span&gt;&lt;Span FontFamily="微软雅黑" Foreground="#FF000000" xml:lang="zh-cn"&gt;3&lt;/Span&gt;&lt;Run FontFamily="微软雅黑" xml:lang="zh-cn"&gt;日出生，穿越回20世纪的哦！）&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</Value>
+    </Setting>
+    <Setting Name="WindowStartupLocation" Type="System.Windows.WindowStartupLocation" Scope="User">
+      <Value Profile="(Default)">CenterScreen</Value>
+    </Setting>
+    <Setting Name="IsDropShadowEffectEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OSInstallationSign" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="InstallationDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-12-21</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

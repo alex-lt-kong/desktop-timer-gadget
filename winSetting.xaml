@@ -1,0 +1,88 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:extToolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" xmlns:System="clr-namespace:System;assembly=mscorlib"
+      xmlns:RichTextBoxToolBar="clr-namespace:RichTextBoxToolBar;assembly=RichTextBoxToolBar"
+      x:Name="winSetting1" x:Class="MamsdsTimer.winSetting"
+        Title="Mamsds桌面倒计时软件 - 设置" Height="590" Width="818" Loaded="winSetting1_Loaded" Closed="winSetting1_Closed" Icon="Resources/windowclock.ico" ResizeMode="NoResize" FontFamily="Microsoft YaHei">
+
+    <Grid Margin="0,0,0,0">
+        <GroupBox x:Name="grpTimeSetting" Header="倒计时设置" Height="60" Margin="10,15,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Grid Margin="0,0,0,0">
+
+                <TextBlock HorizontalAlignment="Left" Height="15" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" RenderTransformOrigin="-2.65,0.467"><Span Foreground="Black" FontSize="12" FontFamily="微软雅黑" Language="zh-cn"><Run Text="目标时间："/></Span></TextBlock>
+                <xctk:DateTimePicker x:Name="DeadlinePicker" Margin="79,7,0,0" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+                <TextBlock HorizontalAlignment="Left" Height="15" Margin="299,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" RenderTransformOrigin="-2.65,0.467"><Run FontFamily="微软雅黑" Language="zh-cn" Text="位置"/><Span Foreground="Black" FontSize="12" FontFamily="微软雅黑" Language="zh-cn"><Run Text="："/><Run Text=" "/></Span></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Height="15" Margin="407,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" RenderTransformOrigin="-2.65,0.467" Text="样式："/>
+                <xctk:SingleUpDown x:Name="CountDownLocationUpDown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Height="18" RenderTransformOrigin="2.2,7.222" ValueChanged="CountDownLocationUpDown_ValueChanged" Value="200" Margin="343,10,0,0"/>
+                <ToolBar HorizontalAlignment="Left" Height="27" Margin="449,6,0,0" VerticalAlignment="Top" Width="321" RenderTransformOrigin="0.5,0.5">
+                    <ComboBox x:Name="cboSelectFont" HorizontalAlignment="Left" Height="22" Margin="0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="cboSelectFont_SelectionChanged"/>
+                    <Separator/>
+                    <xctk:ShortUpDown x:Name="FontSizeUpDown" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="41" ValueChanged="FontsizeSwitcher_ValueChanged" Margin="0,0,0,-3"/>
+                    <Separator/>
+                    <xctk:ColorPicker x:Name="FontColorPicker" Height="25" VerticalAlignment="Top" SelectedColorChanged="ColorPicker_SelectedColorChanged" Width="50" Margin="0,0,0,-3"/>
+                    <Separator/>
+                    <ComboBox x:Name="cboFontAlign" HorizontalAlignment="Left" Height="25" Margin="0,0,0,-3" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0,-1" SelectionChanged="cboFontAlign_SelectionChanged">
+                        <System:String>左对齐</System:String>
+                        <System:String>居中</System:String>
+                        <System:String>右对齐</System:String>
+                    </ComboBox>
+                </ToolBar>
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btnExit" Content="退出" Margin="0,0,15,9" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" RenderTransformOrigin="0.467,0.682" Click="Button_Click_1" Grid.Column="1"/>
+        <Button x:Name="btnSave" Content="保存" Margin="0,0,100,10" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" RenderTransformOrigin="0.5,0.5" Click="Button_Click_2" Grid.Column="1"/>
+        <GroupBox Header="窗口设置" Margin="10,82,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="63">
+            <Grid Margin="0,0,0,0">
+                <xctk:ShortUpDown x:Name="WinVUpDown" HorizontalAlignment="Left" Margin="155,12,0,0" VerticalAlignment="Top" Width="20" ValueChanged="WinVUpDown_ValueChanged"/>
+                <xctk:ShortUpDown x:Name="WinHUpDown" HorizontalAlignment="Left" Margin="245,11,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5" ValueChanged="WinHUpDown_ValueChanged">
+                    <xctk:ShortUpDown.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.166"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </xctk:ShortUpDown.RenderTransform>
+                </xctk:ShortUpDown>
+                <TextBlock HorizontalAlignment="Left" Height="20" Margin="93,12,0,0" TextWrapping="Wrap" Text="上下移动：" VerticalAlignment="Top" Width="62"/>
+                <TextBlock HorizontalAlignment="Left" Height="20" Margin="182,12,0,0" TextWrapping="Wrap" Text="左右移动：" VerticalAlignment="Top" Width="62"/>
+                <TextBlock HorizontalAlignment="Left" Height="20" Margin="291,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"><Span Foreground="Black" FontSize="12" FontFamily="微软雅黑" Language="zh-cn"><Run Text="窗体尺寸："/></Span></TextBlock>
+                <xctk:ShortUpDown x:Name="WidthUpDown" HorizontalAlignment="Left" Margin="362,11,0,0" VerticalAlignment="Top" Width="50" ValueChanged="WidthUpDown_ValueChanged"/>
+                <xctk:ShortUpDown x:Name="HeightUpdown" HorizontalAlignment="Left" Margin="435,11,0,0" VerticalAlignment="Top" Width="50" ValueChanged="HeightUpdown_ValueChanged"/>
+                <TextBlock HorizontalAlignment="Left" Height="20" Margin="419,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="10"><Run FontFamily="微软雅黑" Language="zh-cn" Text="X"/></TextBlock>
+                <Button x:Name="btnNoBGP" Content="使用透明背景(荐!)" Height="23" Margin="606,9,10,0" VerticalAlignment="Top" Click="btnNoBGP_Click"/>
+                <Button x:Name="btnSelectBGP" Content="选择背景" HorizontalAlignment="Left" Height="23" Margin="507,9,0,0" VerticalAlignment="Top" Width="90" Click="btnSelectBGP_Click"/>
+                <CheckBox x:Name="chkWindowCenter" Content="窗口居中" HorizontalAlignment="Left" Margin="9,13,0,12" Click="chkWindowCenter_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpSystem" Header="程序设置" Margin="10,150,10,0" VerticalAlignment="Top" Height="80">
+            <Grid Margin="0,0,0,0">
+                <CheckBox x:Name="chkIsAutoStart" Content="开机自启动" HorizontalAlignment="Left" Margin="16,9,0,29" Width="120" />
+                <CheckBox x:Name="chkIsTopmost" Content="总在最上" HorizontalAlignment="Left" Height="20" Margin="141,10,0,0" VerticalAlignment="Top" Width="100" Click="chkIsTopMost_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="259,10,0,0" TextWrapping="Wrap" Text="时间格式字符串" Width="98" Height="15" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtStringFormat" Height="20" Margin="357,9,183,0" TextWrapping="Wrap" VerticalAlignment="Top" />
+                <Button x:Name="btnViewHelper" Content="帮助文档" Height="23" Margin="0,6,10,0" VerticalAlignment="Top" RenderTransformOrigin="2.2,0.565" HorizontalAlignment="Right" Width="76" Click="btnViewHelper_Click"/>
+                <CheckBox x:Name="chkIsDropShadowEffect" Content="文字发光（增强文字的可识别性，特别适用于启用了透明背景的情况）" HorizontalAlignment="Left" Margin="16,34,0,0" VerticalAlignment="Top" Click="chkIsDropShadowEffect_Click"/>
+                <Button x:Name="btnViewHelper_Copy" Content="帮助文档" Height="23" Margin="0,6,10,0" VerticalAlignment="Top" RenderTransformOrigin="2.2,0.565" HorizontalAlignment="Right" Width="76" Click="btnViewHelper_Click"/>
+                <Button x:Name="btnPreview" Content="预览" HorizontalAlignment="Left" Margin="613,6,0,0" VerticalAlignment="Top" Width="76" Height="23" Click="btnPreview_Click" />
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpRtfEditor" Header="文字设置" Margin="10,235,10,42">
+            <Grid Margin="2,2,2,2">
+                <RichTextBox x:Name="rtfMainTitle" Margin="1,27,1,1" TextChanged="rtfMainTitle_TextChanged">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run Text="RichTextBox"/>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+                <RichTextBoxToolBar:RichTextBoxToolBar Height="25" Margin="1,1,1,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="770"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btnReset" Content="重置设置" Margin="0,0,185,10" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="92" RenderTransformOrigin="0.467,0.682" Click="btnReset_Click"/>
+
+    </Grid>
+</Window>
